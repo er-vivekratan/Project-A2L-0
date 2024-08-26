@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Marketplace</title>
+    <link rel="stylesheet" href="farmy.css">
+</head>
+<body>
+    <header>
+        <h1>Crop Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Buy Fresh Crops Directly from Farmers</h2>
+        <p>Your one-stop marketplace for organic and fresh produce</p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-form">
+        <h2>Find Crops</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="state">Select State:</label>
+            <select id="state" name="state">
+                <option value="select">Select State</option>
+                <option value="andhra_pradesh">Andhra Pradesh</option>
+                <option value="gujarat">Gujarat</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="punjab">Punjab</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="uttar_pradesh">Uttar Pradesh</option>
+                <option value="west_bengal">West Bengal</option>
+                <!-- Add more states as needed -->
+            </select>
+
+            <label for="crop-category">Crop Category:</label>
+            <select id="crop-category" name="crop-category">
+                <option value="select">Select Category</option>
+                <option value="grains">Grains</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="fruits">Fruits</option>
+                <option value="spices">Spices</option>
+                <option value="pulses">Pulses</option>
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Wheat">
+                <h3>Wheat</h3>
+                <p>$20 per bag</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Rice">
+                <h3>Rice</h3>
+                <p>$25 per bag</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Corn">
+                <h3>Corn</h3>
+                <p>$15 per bag</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Crop Marketplace. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+<style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #EAF8E6;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero button:hover {
+    background-color: #45a049;
+}
+
+/* Search Form Styles */
+.search-form {
+    padding: 2rem;
+    background-color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.search-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.search-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-form label {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+}
+
+.search-form input, .search-form select {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.search-form button:hover {
+    background-color: #45a049;
+}
+
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.product-item button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.product-item button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+    </style>
+</body>
+</html>
